@@ -1,43 +1,19 @@
 const data = {
   formacion: [
     {
-      year: "2025",
-      title: "Especialización en IA aplicada a contenido digital",
-      institution: "Programa profesional · Formación continua",
+      year: "2026",
+      title: "Formación Superior en IA aplicada a la empresa",
+      institution: "Fedeto",
       description:
-        "Enfoque en diseño de prompts, narrativa audiovisual y uso de avatares para comunicación de marca.",
+        "Especialización en IA aplicada a empresas",
     },
     {
-      year: "2023",
-      title: "Diplomado en Marketing Digital",
-      institution: "Institución de formación online",
+      year: "2022 - 2023",
+      title: "Servicios Estéticos de Higiene, Depilación y Maquillaje",
+      institution: "Escuela de Estética y Peluquería IDÓNEA",
       description:
-        "Estrategia de contenidos, funnels, analítica y optimización de campañas multicanal.",
+        " Formación práctica en estética, depilación y maquillaje profesional.",
     },
-    {
-      year: "2020",
-      title: "Grado en Comunicación",
-      institution: "Universidad",
-      description:
-        "Base sólida en comunicación estratégica, storytelling y gestión de proyectos.",
-    },
-  ],
-  experiencia: [
-    {
-      year: "2024 - Actualidad",
-      title: "Creador/a de soluciones audiovisuales con IA",
-      institution: "Freelance / Proyectos para marcas",
-      description:
-        "Diseño de piezas explicativas con avatares, guiones y estructura narrativa orientada a conversión.",
-    },
-    {
-      year: "2021 - 2024",
-      title: "Especialista en contenido digital",
-      institution: "Agencia de marketing",
-      description:
-        "Producción de contenido para campañas, coordinación con equipos creativos y mejora de engagement.",
-    },
-    ,
     {
       year: "2017 - 2019",
       title: "FP superior en Animaciones 3D, Juegos y Entornos Interactivos",
@@ -45,6 +21,7 @@ const data = {
       description: "Diseño y desarollo de videojuegos y entorno Interactivos.",
     }
   ],
+  
   hardSkills: [
     { name: "Comunicación audiovisual", level: 92 },
     { name: "Narrativa y guion", level: 89 },
