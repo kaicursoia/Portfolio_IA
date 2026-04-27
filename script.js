@@ -39,11 +39,10 @@ const data = {
     },
     ,
     {
-      year: "2021 - 2024",
-      title: "Especialista en contenido digital",
-      institution: "Agencia de marketing",
-      description:
-        "Producción de contenido para campañas, coordinación con equipos creativos y mejora de engagement.",
+      year: "2017 - 2019",
+      title: "FP superior en Animaciones 3D, Juegos y Entornos Interactivos",
+      institution: "CEV - Escuela Superior de Formación Audiovisual",
+      description: "Diseño y desarollo de videojuegos y entorno Interactivos.",
     }
   ],
   hardSkills: [
