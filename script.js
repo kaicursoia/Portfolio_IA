@@ -21,7 +21,29 @@ const data = {
       description: "Diseño y desarollo de videojuegos y entorno Interactivos.",
     }
   ],
-  
+  experiencia: [
+    {
+      year: "2024 - Actualidad",
+      title: "Creador/a de soluciones audiovisuales con IA",
+      institution: "Freelance / Proyectos para marcas",
+      description:
+        "Diseño de piezas explicativas con avatares, guiones y estructura narrativa orientada a conversión.",
+    },
+    {
+      year: "2021 - 2024",
+      title: "Especialista en contenido digital",
+      institution: "Agencia de marketing",
+      description:
+        "Producción de contenido para campañas, coordinación con equipos creativos y mejora de engagement.",
+    },
+    ,
+    {
+      year: " 2023 - 2024",
+      title: "Expendedor - Vendedor nivel C2",
+      institution: "Repsol",
+      description: "Diseño y desarollo de videojuegos y entorno Interactivos.",
+    }
+  ],
   hardSkills: [
     { name: "Comunicación audiovisual", level: 92 },
     { name: "Narrativa y guion", level: 89 },
