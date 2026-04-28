@@ -3,7 +3,7 @@ const data = {
     {
       year: "2026",
       title: "Formación Superior en IA aplicada a la empresa",
-      institution: "Fedeto",
+      institution: "Fedeto - Universidad de Nebrija (Titulación propia universitaria equivalente a 27 ECTS)",
       description:
         "Especialización en IA aplicada a empresas",
     },
@@ -26,9 +26,13 @@ const data = {
     { name: "Comunicación audiovisual", level: 92 },
     { name: "Narrativa y guion", level: 89 },
     { name: "Prompt engineering", level: 85 },
-    { name: "Estrategia digital", level: 82 },
+    { name: "Creación e implementación de chatbots", level: 82 },
+    { name: "Benchmarking", level: 92 },
+    { name: "Automatización", level: 89 },
+    { name: "Creación y diseño de avatares", level: 100 },
+    { name: "Estrategia digital", level: 90 },
   ],
-  softSkills: ["Liderazgo colaborativo", "Empatía", "Adaptabilidad", "Pensamiento crítico"],
+  softSkills: ["Liderazgo colaborativo", "Empatía", "Adaptabilidad", "Pensamiento crítico", "Atención automatizada al cliente","Identificación de necesidades del usuario"],
 };
 
 const timelineTemplate = document.getElementById("timeline-item-template");
