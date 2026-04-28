@@ -87,6 +87,7 @@ body::before {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.9rem;
 }
 
@@ -292,6 +293,9 @@ h2 {
 @media (max-width: 768px) {
   .colocarDivs {
     grid-template-columns: repeat(2, 1fr);
+  }
+    .nav {
+    grid-template-columns: 1fr;
   }
 }
 
