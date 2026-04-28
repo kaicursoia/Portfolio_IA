@@ -87,7 +87,6 @@ body::before {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.9rem;
 }
 
@@ -285,19 +284,19 @@ h2 {
 
 
 @media (max-width: 1024px) {
-  .chips-soft {
+  .colocarDivs {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .chips-soft {
+  .colocarDivs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
-  .chips-soft {
+  .colocarDivs {
     grid-template-columns: 1fr;
   }
 }
@@ -598,20 +597,20 @@ textarea:focus {
 }
 
 @media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .avatar-card {
     max-width: 300px;
   }
+
   .colocarDivs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 4 columnas */
-  grid-template-rows: repeat(4, auto);   /* 2 filas */
-  gap: 10px; /* espacio entre tarjetas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+  }
 }
-}
+
 
 @media (max-width: 640px) {
   .section {
@@ -635,7 +634,6 @@ textarea:focus {
 
 .colocarDivs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-  grid-template-rows: repeat(2, auto);   /* 2 filas */
-  gap: 10px; /* espacio entre tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
 }
