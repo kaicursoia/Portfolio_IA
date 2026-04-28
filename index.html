@@ -114,10 +114,23 @@
         <div class="container">
           <div class="title-row">
             <h2>Proyectos</h2>
-            <p class="section-note">Sección destacada: <strong>Avatares</strong></p>
+            <div class="section-dropdown">
+              <p class="section-note">Sección destacada: 
+                <button class="dropdown-toggle" id="projectDropdown">
+                  <strong>Avatares</strong>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                    <path d="M6 6l4 4 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </p>
+              <div class="dropdown-menu" id="projectDropdownMenu">
+                <a href="#avatares" class="dropdown-item active" data-section="avatares">Avatares</a>
+                <a href="#chatbot" class="dropdown-item" data-section="chatbot">Chatbot de IA</a>
+              </div>
+            </div>
           </div>
           <div class="subsection card">
-            <h3>Avatares</h3>
+            <h3 id="avatares">Avatares</h3>
             <p class="subtle">Proyectos de avatares generados con IA para distintos sectores.</p>
             <div class="project-grid" aria-live="polite">
               <article class="project-card reveal-item">
@@ -218,7 +231,7 @@
           </div>
 
           <div class="subsection card">
-            <h3>Chatbot de IA integrado en portfolio</h3>
+            <h3 id="chatbot">Chatbot de IA integrado en portfolio</h3>
             <p class="project-description">
               Desarrollé un chatbot utilizando Chatbase, gestionando todo el proceso desde la definición del caso de uso hasta 
               su implementación final, con el objetivo de mejorar la interacción con usuarios y automatizar procesos.
@@ -233,7 +246,7 @@
             </ul>
             <p class="project-tech">Habilidades:</p>
             <div class="chips" aria-label="Habilidades del Chat bot">
-              <span>Integración con APIs</span>
+              <span>Integración APIs</span>
               <span>Procesamiento de lenguaje natural</span>
               <span>Prompt engineering y pensamiento crítico</span>
               <span>Orientación a negocio y experiencia de usuario</span>

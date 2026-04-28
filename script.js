@@ -92,6 +92,57 @@ const applyRevealAnimation = () => {
   document.querySelectorAll(".reveal, .reveal-item").forEach((element) => observer.observe(element));
 };
 
+const initializeProjectDropdown = () => {
+  const dropdown = document.getElementById("projectDropdown");
+  const dropdownMenu = document.getElementById("projectDropdownMenu");
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+
+  if (!dropdown || !dropdownMenu) return;
+
+  dropdown.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdownMenu.classList.toggle("show");
+    dropdown.classList.toggle("active");
+  });
+
+  dropdownItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      
+      // Actualizar el item activo
+      dropdownItems.forEach((i) => i.classList.remove("active"));
+      item.classList.add("active");
+      
+      // Actualizar el texto del botón
+      const sectionName = item.dataset.section === "avatares" ? "Avatares" : "Chatbot de IA";
+      dropdown.innerHTML = `<strong>${sectionName}</strong><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M6 6l4 4 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      
+      // Cerrar el dropdown
+      dropdownMenu.classList.remove("show");
+      dropdown.classList.remove("active");
+      
+      // Navegar al apartado correcto con scroll suave
+      const targetId = item.dataset.section === "avatares" ? "avatares" : "chatbot";
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
+      }
+    });
+  });
+
+  // Cerrar al hacer click fuera
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.remove("show");
+      dropdown.classList.remove("active");
+    }
+  });
+};
+
 renderTimeline("timeline-formacion", data.formacion);
 renderSkills();
 applyRevealAnimation();
+initializeProjectDropdown();
