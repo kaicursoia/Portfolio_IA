@@ -8,13 +8,6 @@ const data = {
         "Especialización en IA aplicada a empresas",
     },
     {
-      year: "2022 - 2023",
-      title: "Servicios Estéticos de Higiene, Depilación y Maquillaje",
-      institution: "Escuela de Estética y Peluquería IDÓNEA",
-      description:
-        " Formación práctica en estética, depilación y maquillaje profesional.",
-    },
-    {
       year: "2017 - 2019",
       title: "FP superior en Animaciones 3D, Juegos y Entornos Interactivos",
       institution: "CEV - Escuela Superior de Formación Audiovisual",
